@@ -1,0 +1,60 @@
+// * Mixins
+@mixin medQmax($arg...){
+    @if length($arg) == 1{
+        @media screen and (max-width: nth($arg, 1)){
+            @content;
+        }
+    }
+    @if length($arg) == 2{
+        @media screen and (max-width: nth($arg, 1)) and (min-width: nth($arg, 2)){
+            @content;
+        }
+    }
+}
+
+@mixin medQmin($arg...){
+    @if length($arg) == 1{
+        @media screen and (min-width: nth($arg, 1)){
+            @content;
+        }
+    }
+    @if length($arg) == 2{
+        @media screen and (min-width: nth($arg, 1)) and (max-width: nth($arg, 2)){
+            @content;
+        }
+    }
+}
+
+@mixin section-title{
+    text-align: center;
+    color: $stargreen;
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+
+@mixin gallery-btn{
+    color: white;
+    background: $trans-bg-dark;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        cursor: pointer;
+        background: lighten($trans-bg-dark, 10);
+    }
+    h2{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+@mixin flexboxCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// * End Mixins
