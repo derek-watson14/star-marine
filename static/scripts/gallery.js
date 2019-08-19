@@ -5,37 +5,36 @@
     const leftButton = document.querySelector(".gallery__photos__left-btn");
     const rightButton = document.querySelector(".gallery__photos__right-btn");
 
-    let current = 0;
-    const end = images.length - 1;
-
-    (function firstIndicator(){
-        indicators[current].className += " mark--active";
-    })()
-
-    function turnOff(){
-        images[current].style.display = "none";
-        captions[current].style.display = "none";
-        indicators[current].className = "gallery__photos__marks__mark";
-    }
+    let currentImg = 0;
+    const firstImg = 0;
+    const lastImg = images.length - 1;
 
     function turnOn(){
-        images[current].style.display = "block";
-        captions[current].style.display = "block";
-        indicators[current].className += " mark--active";
-    }
+        images[currentImg].style.display = "block";
+        captions[currentImg].style.display = "block";
+        indicators[currentImg].classList.toggle("mark--active", true);
+    };
+
+    function turnOff(){
+        images[currentImg].style.display = "none";
+        captions[currentImg].style.display = "none";
+        indicators[currentImg].classList.toggle("mark--active", false);
+    };
+
+    turnOn();
 
     leftButton.addEventListener("click", () => {
-        if (current > 0) {
+        if (currentImg > firstImg) {
             turnOff();
-            current--;
+            currentImg--;
             turnOn();
         }
     });
 
     rightButton.addEventListener("click", () => {
-        if (current < end) {
+        if (currentImg < lastImg) {
             turnOff();
-            current++;
+            currentImg++;
             turnOn();
         }
     });
@@ -43,7 +42,7 @@
     indicators.forEach((item, index) => {
         item.addEventListener("click", () => {
             turnOff();
-            current = index;
+            currentImg = index;
             turnOn();
         })
     })
