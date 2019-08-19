@@ -29,7 +29,36 @@
     text-align: center;
     color: $stargreen;
     font-size: 1.8rem;
-    margin: 20px 0;
+}
+
+// * Heading Dashes
+@mixin dash-container($marg-top, $marg-bot) {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin-top: $marg-top;
+    margin-bottom: $marg-bot;
+}
+@mixin left-dash($color, $top) {
+    border-top: 1px solid $color;
+    flex: 1;
+    position: relative;
+    top: $top;
+    margin-right: 15px;
+}
+@mixin right-dash($color, $top) {
+    border-top: 1px solid $color;
+    flex: 1;
+    position: relative;
+    top: $top;
+    margin-left: 15px;
+}
+// ! End Heading Dashes
+
+@mixin flexboxCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @mixin gallery-btn{
@@ -39,22 +68,14 @@
     width: 40px;
     border-radius: 100%;
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexboxCenter;
     &:hover{
         cursor: pointer;
         background: lighten($trans-bg-dark, 10);
     }
-    h2{
-        font-size: 2rem;
-        font-weight: bold;
+    h1{
+        text-align: center;
     }
 }
 
-@mixin flexboxCenter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 // * End Mixins
