@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="static/css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=B612+Mono|Red+Hat+Text&display=swap" rel="stylesheet">
     <title>Gallery</title>
 </head>
 <body>
@@ -13,9 +14,10 @@
         <div class="nav-container">
             <div class="nav-links">
                 <a href="index.html" class="nav-links__link" id="nav-home">Star Marine</a>
+                <a href="index.html" class="nav-links__link" id="nav-tugs">Home</a>
                 <a href="tugs.html" class="nav-links__link" id="nav-tugs">Tugs</a>
                 <a href="gallery.html" class="nav-links__link" id="nav-photos">Photos</a>
-                <a href="#" class="nav-links__link" id="nav-contact">Contact</a>
+                <a href="index.html#contact" class="nav-links__link" id="nav-contact">Contact</a>
                 <a href="javascript:void(0);" class="nav-links__menu-btn">
                     <div class="menu-btn__line"></div>
                     <div class="menu-btn__line"></div>
@@ -24,59 +26,93 @@
             </div>
         </div>
     </nav>
+    <div id="status" style="position:fixed; top:10px; left:120px"></div>
     <section class="boat-cards">
         <h1 class="boat-cards__header">Tugs and Barges</h1>
         <div class="card-container">
-            <div class="boat-card">
+            <div class="boat-card bc--inView" id="red-bluff">
                 <div class="boat-card__info">
-                    <h2 class="boat-card__info__head">Red Bluff</h2>
+                    <div class="bc-dash-container">
+                        <div class="bc-dash-left"></div>
+                            <h2 class="boat-card__info__head">Red Bluff</h2>
+                        <div class="bc-dash-right"></div>
+                    </div>
                     <table class="boat-card__info__table">
-                        <tr><td>Length</td><td>71ft</td></tr>
-                        <tr><td>Horse Power</td><td>2400</td></tr>
-                        <tr><td>Engine</td><td>Dual Cats</td></tr>
+                        <tr><td>Length</td><td>75ft</td></tr>
+                        <tr><td>Horsepower</td><td>1,225</td></tr>
+                        <tr><td>Type</td><td>Twin Open</td></tr>
                     </table>
                 </div>
                 <div class="boat-card__img">
                     <img src="Images/for-site/red-bluff.jpg"/>
                 </div>
             </div>
-            <div class="boat-card">
+            <div class="boat-card" id="seabold">
                 <div class="boat-card__info">
-                    <h2 class="boat-card__info__head">Seabold</h2>
+                    <div class="bc-dash-container">
+                        <div class="bc-dash-left"></div>
+                            <h2 class="boat-card__info__head">Seabold</h2>
+                        <div class="bc-dash-right"></div>
+                    </div>
                     <table class="boat-card__info__table">
                         <tr><td>Length</td><td>100ft</td></tr>
-                        <tr><td>Horse Power</td><td>5200</td></tr>
-                        <tr><td>Engine</td><td>Dual Cats</td></tr>
+                        <tr><td>Horsepower</td><td>2,400</td></tr>
+                        <tr><td>Type</td><td>Twin Open</td></tr>
                     </table>
                 </div>
                 <div class="boat-card__img">
                     <img src="Images/for-site/reflection.jpg"/>
                 </div>
             </div>
-            <div class="boat-card">
+            <div class="boat-card" id="glen-cove">
                 <div class="boat-card__info">
-                    <h2 class="boat-card__info__head">Glen Cove</h2>
+                    <div class="bc-dash-container">
+                        <div class="bc-dash-left"></div>
+                            <h2 class="boat-card__info__head">Glen Cove</h2>
+                        <div class="bc-dash-right"></div>
+                    </div>
                     <table class="boat-card__info__table">
                         <tr><td>Length</td><td>100ft</td></tr>
-                        <tr><td>Horse Power</td><td>2600</td></tr>
-                        <tr><td>Engine</td><td>Cat</td></tr>
+                        <tr><td>Horsepower</td><td>1,200</td></tr>
+                        <tr><td>Type</td><td>Single Screw Open</td></tr>
                     </table>
                 </div>
                 <div class="boat-card__img">
                     <img src="Images/for-site/glen-cove.jpg"/>
                 </div>
             </div>
-            <div class="boat-card">
+            <div class="boat-card" id="redwood-city">
                 <div class="boat-card__info">
-                    <h2 class="boat-card__info__head">Redwood City</h2>
+                    <div class="bc-dash-container">
+                        <div class="bc-dash-left"></div>
+                            <h2 class="boat-card__info__head">Redwood City</h2>
+                        <div class="bc-dash-right"></div>
+                    </div>
                     <table class="boat-card__info__table">
                         <tr><td>Length</td><td>68ft</td></tr>
-                        <tr><td>Horse Power</td><td>2500</td></tr>
-                        <tr><td>Engine</td><td>Dual Cats</td></tr>
+                        <tr><td>Horsepower</td><td>1,250</td></tr>
+                        <tr><td>Type</td><td>Twin Fixed Nozzles</td></tr>
                     </table>
                 </div>
                 <div class="boat-card__img">
                     <img src="Images/for-site/rc-deck.jpg"/>
+                </div>
+            </div>
+            <div class="boat-card" id="kashega">
+                <div class="boat-card__info">
+                    <div class="bc-dash-container">
+                        <div class="bc-dash-left"></div>
+                            <h2 class="boat-card__info__head">Kashega</h2>
+                        <div class="bc-dash-right"></div>
+                    </div>
+                    <table class="boat-card__info__table">
+                        <tr><td>Length</td><td>200ft</td></tr>
+                        <tr><td>Horsepower</td><td>Unpowered</td></tr>
+                        <tr><td>Type</td><td>Barge</td></tr>
+                    </table>
+                </div>
+                <div class="boat-card__img">
+                    <img src="Images/for-site/kash.jpg"/>
                 </div>
             </div>
         </div>
@@ -87,6 +123,7 @@
         </div>
     </footer>
     <script type="text/javascript" src="static/scripts/navbar.js"></script>
+    <script type="text/javascript" src="static/scripts/tugs.js"></script>
 </div>
 </body>
 </html>
