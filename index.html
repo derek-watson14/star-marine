@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="static/css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=B612+Mono|Red+Hat+Text&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Home</title>
 </head>
 <body>
@@ -13,9 +18,10 @@
         <div class="nav-container">
             <div class="nav-links">
                 <a href="index.html" class="nav-links__link" id="nav-home">Star Marine</a>
+                <a href="index.html" class="nav-links__link" id="nav-tugs">Home</a>
                 <a href="tugs.html" class="nav-links__link" id="nav-tugs">Tugs</a>
                 <a href="gallery.html" class="nav-links__link" id="nav-photos">Photos</a>
-                <a href="#" class="nav-links__link" id="nav-contact">Contact</a>
+                <a href="index.html#contact" class="nav-links__link" id="nav-contact">Contact</a>
                 <a href="javascript:void(0);" class="nav-links__menu-btn">
                     <div class="menu-btn__line"></div>
                     <div class="menu-btn__line"></div>
@@ -41,17 +47,38 @@
         <div class="about">
             <div class="about-content">
                 <div class="about-content__text">
-                    <h1 class="about-content__text__title">About Us</h1>
-                    <p class="about-content__text__para">For more than 40 years Star Marine has provided specialized towing service for
-                        project cargo for marine construction projects and cable laying operations. We have provided
-                        dump barge towing for dredge project from Grays Harbor to Blaine, Washington. We have
-                        been called on for construction support for several major bridges in the Pacific Northwest
-                        and most recently barge lumber for several major lumber companies.
-                    </p>
-                    <br>
-                    <p class="about-content__text__para">We believe in working together with our customers to profit through innovation
-                        and integrity. Our experience and long term relationships make this possible.
-                    </p>
+                    <div class="about-head__container">
+                        <div class='about-head__left-dash'></div>
+                            <h1 class="about-head__title">About Us</h1>
+                        <div class='about-head__right-dash'></div>
+                    </div>
+                    <div class="about-content__text__body">
+                        <p class="about-content__text__para">For more than 40 years Star Marine has provided specialized towing service for
+                            project cargo for marine construction projects and cable laying operations. We have provided
+                            dump barge towing for dredge project from Grays Harbor to Blaine, Washington. We have
+                            been called on for construction support for several major bridges in the Pacific Northwest
+                            and most recently barge lumber for several major lumber companies.
+                        </p>
+                        <br>
+                        <p class="about-content__text__para">We believe in working together with our customers to profit through innovation
+                            and integrity. Our experience and long term relationships make this possible.
+                        </p>
+                    </div>
+                    <a name="contact" class="contact-content">
+                        <div class="contact-head__container">
+                            <div class='contact-head__left-dash'></div>
+                                <h1 class="contact-head__title">Contact</h1>
+                            <div class='contact-head__right-dash'></div>
+                        </div>
+                        <div class="contact-info__containter">
+                            <p>P.O. Box 1143</p>
+                            <p>Port Hadlock, WA 98339</p>
+                            <p>(206) 842-7198</p>
+                            <p>office@starmarinetugs.com</p>
+                            <br>
+                            <p>64 N Water St. Port Hadlock, WA 98339</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="about-content__img-container">
                     <img src="Images/for-site/rb-logs.jpg" class="about-content__img-container__img"/>
