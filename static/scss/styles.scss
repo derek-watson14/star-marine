@@ -256,6 +256,7 @@ body{
 .about-content__img-container{
     flex: 1 1 0;
     margin-right: 20px;
+    position: relative;
     @include medQmax(600px){
         margin: 0;
         opacity: 0.6;
@@ -265,6 +266,7 @@ body{
     width: 100%;
     box-shadow: 0 0 3px;
     border-radius: 5px;
+    position: relative;
 }
 // ! End About
 
