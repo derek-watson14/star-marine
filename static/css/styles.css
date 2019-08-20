@@ -247,11 +247,12 @@ body {
 
 .about-content {
   display: flex;
-  border: purple solid 2px;
+  border: gold solid 2px;
 }
 @media screen and (max-width: 600px) {
   .about-content {
     flex-direction: column;
+    justify-content: flex-start;
   }
 }
 @media screen and (max-width: 400px) {
