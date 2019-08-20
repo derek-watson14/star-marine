@@ -218,8 +218,8 @@ body{
 }
 .about-content{
     display: flex;
-    border: red solid 2px;
-    overflow: auto;
+    border: purple solid 2px;
+    height: auto;
     @include medQmax(600px){
         flex-direction: column;
     }
