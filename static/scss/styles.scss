@@ -219,10 +219,6 @@ body{
 .about-content{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
-    @include medQmax(900px){
-        align-items: center;
-    }
     @include medQmax(600px){
         flex-direction: column;
     }
