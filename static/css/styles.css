@@ -167,6 +167,11 @@ body {
     justify-content: space-evenly;
   }
 }
+@media screen and (max-width: 400px) {
+  .photo-banner__contact {
+    font-size: 0.5rem;
+  }
+}
 
 .photo-banner__contact div {
   width: 80%;
@@ -218,6 +223,7 @@ body {
 .about-container {
   width: 100%;
   margin: 25px 0;
+  overflow: auto;
 }
 @media screen and (max-width: 600px) {
   .about-container {
