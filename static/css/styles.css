@@ -247,7 +247,6 @@ body {
 
 .about-content {
   display: flex;
-  border: gold solid 2px;
 }
 @media screen and (max-width: 600px) {
   .about-content {
