@@ -252,7 +252,8 @@ body {
 @media screen and (max-width: 600px) {
   .about-content {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: space-between;
   }
 }
 @media screen and (max-width: 400px) {

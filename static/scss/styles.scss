@@ -221,7 +221,8 @@ body{
     border: gold solid 2px;
     @include medQmax(600px){
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-between;
+        align-items: space-between;
     }
     @include medQmax(400px){
         height: 1300px;
