@@ -201,7 +201,6 @@ body{
 // * About
 .about-container{
     width: 100%;
-    height: 2000px;
     margin: 25px 0;
     @include medQmax(600px){
         margin: 5px 0;
@@ -223,6 +222,7 @@ body{
     width: 100%;
     min-height: 100%;
     border: red solid 2px;
+    height: 2000px;
     @include medQmax(600px){
         flex-direction: column;
     }
