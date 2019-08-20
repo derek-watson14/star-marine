@@ -217,12 +217,10 @@ body{
     }
 }
 .about-content{
-    @include flexboxCenter;
-    flex-direction: row-reverse;
+    display: flex;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     border: red solid 2px;
-    min-height: 100%;
     @include medQmax(600px){
         flex-direction: column;
     }
@@ -273,11 +271,13 @@ body{
 // * Contact
 .contact-content{
     width: 100%;
-    @include flexboxCenter;
+    display: flex;
     flex-direction: column;
+
 }
 .contact-head__container{
     @include dash-container(20px, 20px);
+    align-self: center;
 }
 .contact-head__left-dash{
     @include left-dash($dark-gray, 18px);

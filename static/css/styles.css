@@ -247,13 +247,9 @@ body {
 
 .about-content {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row-reverse;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   border: red solid 2px;
-  min-height: 100%;
 }
 @media screen and (max-width: 600px) {
   .about-content {
@@ -332,8 +328,6 @@ body {
 .contact-content {
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -343,6 +337,7 @@ body {
   width: 75%;
   margin-top: 20px;
   margin-bottom: 20px;
+  align-self: center;
 }
 
 .contact-head__left-dash {
