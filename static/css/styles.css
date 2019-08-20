@@ -248,11 +248,15 @@ body {
 .about-content {
   display: flex;
   border: purple solid 2px;
-  height: auto;
 }
 @media screen and (max-width: 600px) {
   .about-content {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about-content {
+    height: 1200px;
   }
 }
 

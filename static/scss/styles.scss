@@ -219,9 +219,11 @@ body{
 .about-content{
     display: flex;
     border: purple solid 2px;
-    height: auto;
     @include medQmax(600px){
         flex-direction: column;
+    }
+    @include medQmax(400px){
+        height: 1200px;
     }
 }
 .about-content__text{
