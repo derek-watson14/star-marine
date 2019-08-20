@@ -9,7 +9,6 @@ body {
   font-size: 16px;
   font-family: "B612 Mono", monospace;
   position: relative;
-  min-height: 100%;
 }
 @media screen and (min-width: 1150px) {
   html,
