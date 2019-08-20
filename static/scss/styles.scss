@@ -256,6 +256,7 @@ body{
     margin-right: 20px;
     @include medQmax(600px){
         margin: 0;
+        opacity: 0.6;
     }
 }
 .about-content__img-container__img{
@@ -284,7 +285,8 @@ body{
     @include section-title;
 }
 .contact-info__containter{
-    margin-right: auto;
+    display: flex;
+    justify-content: left;
     font-family: $text;
     font-size: 1.05rem;
     font-weight: bold;
