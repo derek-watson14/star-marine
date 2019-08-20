@@ -222,7 +222,7 @@ body{
     width: 100%;
     min-height: 100%;
     border: red solid 2px;
-    height: 2000px;
+    min-height: 100%;
     @include medQmax(600px){
         flex-direction: column;
     }

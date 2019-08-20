@@ -253,7 +253,7 @@ body {
   width: 100%;
   min-height: 100%;
   border: red solid 2px;
-  height: 2000px;
+  min-height: 100%;
 }
 @media screen and (max-width: 600px) {
   .about-content {
