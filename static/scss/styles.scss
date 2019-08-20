@@ -233,7 +233,7 @@ body{
     align-items: center;
     flex-direction: column;
     @include medQmax(600px){
-        margin-bottom: 20px;
+        margin: 20px 0;
     }
 }
 .about-content__text__body{
