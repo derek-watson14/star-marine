@@ -221,6 +221,8 @@ body{
     @include flexboxCenter;
     flex-direction: row-reverse;
     width: 100%;
+    min-height: 100%;
+    border: red solid 2px;
     @include medQmax(600px){
         flex-direction: column;
     }
