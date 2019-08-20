@@ -208,10 +208,8 @@ body{
     }
 }
 .about{
-    @include flexboxCenter;
     width: 80%;
     margin: auto;
-    flex-direction: column;
     @include medQmax(900px){
         width: 90%;
     }
@@ -222,6 +220,7 @@ body{
 .about-content{
     display: flex;
     flex-direction: row-reverse;
+    overflow: auto;
     @include medQmax(600px){
         flex-direction: column;
     }

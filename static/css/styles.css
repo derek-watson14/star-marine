@@ -232,12 +232,8 @@ body {
 }
 
 .about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 80%;
   margin: auto;
-  flex-direction: column;
 }
 @media screen and (max-width: 900px) {
   .about {
@@ -253,6 +249,7 @@ body {
 .about-content {
   display: flex;
   flex-direction: row-reverse;
+  overflow: auto;
 }
 @media screen and (max-width: 600px) {
   .about-content {
